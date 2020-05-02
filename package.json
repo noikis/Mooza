@@ -1,11 +1,11 @@
 {
   "name": "mooza",
   "version": "1.0.0",
-  "description": "Social Network app for creative people",
+  "description": "a social network for creative people",
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server"
+    "server": "nodemon server"
   },
   "author": "Ilyas Ezzahid",
   "license": "MIT",
@@ -16,9 +16,11 @@
     "express-validator": "^6.4.1",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "moment": "^2.25.1",
     "mongoose": "^5.9.11",
-    "request": "^2.88.2",
-    "socket.io": "^2.3.0"
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
   }
 }
