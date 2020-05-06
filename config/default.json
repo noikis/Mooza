@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://admin:root@mooza-4yxzs.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "MoozaSecretJsonWebTokenSigner"
+  "jwtSecret": "MoozaSecretJsonWebTokenSigner",
+  "githubClientId": "e58925005b4c8ccd854a",
+  "githubSecretId": "b94c0fd98c63b80ce11926fc1509d4f6eb4a6313"
 }
