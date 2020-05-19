@@ -20,7 +20,6 @@ export default function (state = initialState, action) {
 
   switch (type) {
     case USER_LOADER:
-      localStorage.setItem('token', payload.token);
       return {
         ...state,
         user: payload,
@@ -33,7 +32,7 @@ export default function (state = initialState, action) {
       localStorage.setItem('token', payload.token);
       return {
         ...state,
-        user: payload,
+        token: payload.token,
         isAuthenticated: true,
         loading: false,
       };
