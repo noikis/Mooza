@@ -32,7 +32,7 @@ const EditProfile = ({
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
 
   useEffect(() => {
-    if (!profile) getCurrentProfile();
+    if (!profile) getCurrentProfile(getCurrentProfile);
 
     if (!loading && profile) {
       const profileData = { ...initialState };
