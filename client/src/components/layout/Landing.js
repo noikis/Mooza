@@ -11,6 +11,13 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
+          <div className='alert my-3' style={{ textAlign: 'start' }}>
+            <p className='lead'>
+              To test the application use: <br />
+              Email: <strong>demo@gmail.com</strong> <br />
+              Password: <strong>demo123</strong>
+            </p>
+          </div>
           <h1 className='x-large'>Developer Connector</h1>
           <p className='lead'>
             Create a developer profile/portfolio, share posts and get help from
