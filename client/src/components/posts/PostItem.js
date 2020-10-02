@@ -11,7 +11,7 @@ const PostItem = ({
   removeLike,
   deletePost,
   auth,
-  post: { _id, text, name, user, likes, comments, date },
+  post: { _id, text, name, user, avatar, likes, comments, date },
   showActions,
 }) => {
   useEffect(() => {
@@ -21,11 +21,7 @@ const PostItem = ({
     <div className='post bg-white p-1 my-1'>
       <div>
         <Link to={`/profile/${user}`}>
-          <img
-            className='round-img'
-            src='https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200'
-            alt=''
-          />
+          <img className='round-img' src={avatar} alt='avatar' />
           <h4>{name}</h4>
         </Link>
       </div>

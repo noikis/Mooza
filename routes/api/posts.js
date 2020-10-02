@@ -133,7 +133,7 @@ router.put('/like/:id', auth, async (req, res) => {
     if (!post) {
       return res.status(400).json({ msg: 'Post not found' });
     }
-    res.status(500).send('Server Error');
+    return res.status(500).send('Server Error');
   }
 });
 
